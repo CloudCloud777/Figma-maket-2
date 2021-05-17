@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import 'variables';
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.header {
+    padding: 33px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.wrapper {
+    max-width: 1262px;
+    padding: 0 15px;
+
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    &__item {
+        margin-right: 4rem;
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $maincolor;
+        transition : .1s linear;
+    }
+
+    &__link:hover, &__link:focus, &__link:active {
+        color: $purplecolor;
+    }
+
+    .btn {
+        background-color: $purplecolor;
+        padding: 1.2rem 2.4rem;
+        border: 1px solid $purplecolor;
+        border-radius: 0.6rem;
+        color: #fff;
+    }
+
+    .btn {
+        &:hover, &:focus, &:active {
+            background-color: #fff;
+            color: $purplecolor;
+        }
+    }
+}
+
